@@ -1,0 +1,35 @@
+html{
+    background-image: url(C:\Users\vimala\Downloads\car.jpg);
+    background-size: 1550px;
+    background-position: top;
+}
+
+ul li a {
+    color: #fff;
+}
+
+.links{
+    padding: 30px;
+    background-color: darkslategray;
+
+    color: #fff;
+}
+
+h1{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 3px, 2px black;
+
+    color: #fff;
+}
+
+h2{
+    position: sticky;
+    position: -webkit-sticky;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 3px solid lavenderblush;
+    color: black;
+    background-color: darkgoldenrod;
+}

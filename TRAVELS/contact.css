@@ -1,0 +1,57 @@
+html{
+    background-image: url(../Downloads/beach-view1.jpg);
+    background-size: cover; 
+}
+
+h1{
+    color: gold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h2{
+    color: gold;
+}
+
+div{
+    margin-top: 100px;
+    margin-left: 600px;
+    color: #fff;
+}
+
+div1.whatsapp-btn-container{
+    font-size: 50px;
+}
+
+div > a{
+    color: green;
+}
+
+div1 > a{
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    float: right;
+    margin-top: 260px;
+    margin-right: 20px;
+} 
+
+div > i{
+    font-size: 35px;
+    color: green;
+}
+
+i.fab.fa-whatsapp{
+    font-size: 40px;
+}
+
+div > b{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+a{
+    color: black;
+    font-size: 25px;
+}
