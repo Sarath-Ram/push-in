@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="C:\Users\vimala\Desktop\CRUD_JS\output.css">
+    </head>
+    <body>
+        <h2>Your Submitted Information</h2>
+        <div id="outputContainer" class="output-container"></div>
+    
+        <script>
+            let submissions = JSON.parse(localStorage.getItem('submissions')) || [];
+            const colors = ['color-1', 'color-2', 'color-3', 'color-4', 'color-5'];
+    
+            function displaySubmissions() {
+                const outputContainer = document.getElementById('outputContainer');
+                outputContainer.innerHTML = ''; 
+    
+                submissions.forEach((entry, index) => {
+                    const submissionDiv = document.createElement('div');
+                    submissionDiv.className = 'output-item';
+                    submissionDiv.innerHTML = `
+                    <div class="output-item ${colors[index % colors.length]}">
+                        <p><strong>Submission ${index + 1}</strong></p>
+                        <label>Name:</label>
+                        <input type="text" value="${entry.name}" id="name-${index}" disabled><br><br>
+                        <label>Email:</label>
+                        <input type="email" value="${entry.email}" id="email-${index}" disabled><br><br>
+                        <label>Message:</label>
+                        <textarea id="message-${index}" disabled>${entry.message}</textarea><br><br>
+                        <button class="edit-button" onclick="editSubmission(${index})">Edit</button>
+                        <button class="save-button" onclick="saveSubmission(${index})" style="display:none;">Update</button>
+                        <button class="delete-button" onclick="deleteSubmission(${index})">Delete</button>
+                    `;
+                    outputContainer.appendChild(submissionDiv);
+                });
+            }
+    
+            function editSubmission(index) {
+                document.getElementById(`name-${index}`).disabled = false;
+                document.getElementById(`email-${index}`).disabled = false;
+                document.getElementById(`message-${index}`).disabled = false;
+    
+                document.querySelectorAll('.edit-button')[index].style.display = 'none';
+                document.querySelectorAll('.save-button')[index].style.display = 'inline-block';
+            }
+    
+            function saveSubmission(index) {
+                const updatedName = document.getElementById(`name-${index}`).value;
+                const updatedEmail = document.getElementById(`email-${index}`).value;
+                const updatedMessage = document.getElementById(`message-${index}`).value;
+    
+                submissions[index] = { name: updatedName, email: updatedEmail, message: updatedMessage };
+    
+                localStorage.setItem('submissions', JSON.stringify(submissions));
+    
+                document.getElementById(`name-${index}`).disabled = true;
+                document.getElementById(`email-${index}`).disabled = true;
+                document.getElementById(`message-${index}`).disabled = true;
+    
+                document.querySelectorAll('.edit-button')[index].style.display = 'inline-block';
+                document.querySelectorAll('.save-button')[index].style.display = 'none';
+                alert("Your Information have been Updated successfully!");
+            }
+            displaySubmissions();
+
+            function deleteSubmission(index) {
+                submissions.splice(index, 1);
+                localStorage.setItem('submissions', JSON.stringify(submissions));
+                alert("Your Information have been Deleted successfully!")
+                displaySubmissions();
+            }
+    
+        </script>
+    </body>
+    </html>

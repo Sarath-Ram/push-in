@@ -1,0 +1,18 @@
+html{
+    background-color: #fff;
+}
+
+body{
+    margin-top: 200px;
+    text-align: center;
+    padding: 30px;
+    margin-left: 550px;
+    margin-right: 550px;
+    background-color: cadetblue;
+    border-radius: 30px;
+}
+
+button{
+    border-radius: 10px;
+}
+
