@@ -1,0 +1,192 @@
+.bottom {
+    background-image: url(../image/sea.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: aqua;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 10px 20px 12px 0px rgb(148, 142, 142);
+    max-width: 680px;
+    width: 80%;
+    }
+
+
+h2 {
+    color: rgb(255, 183, 0);
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 183, 0);
+}
+
+h2:hover {
+    color: dodgerblue;
+}
+
+.label-name {
+    margin-left: 12px;
+}
+
+.label-email {
+    margin-left: 12px;
+}
+
+.label-number {
+    margin-left: 9px;
+}
+
+.label-name:hover,
+.label-email:hover,
+.label-number:hover {
+    color: dodgerblue;
+}
+
+.input-1, .input-2 {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+
+.input-3 {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+    }
+
+
+
+.input-1:hover,
+.input-2:hover,
+.input-3:hover {
+    background-color: aqua;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    color: #fff;
+    background-color: rgb(1, 63, 1);
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+button:hover {
+    color: darkorange;
+    background-color: rgb(47, 124, 47);
+}
+
+
+/* For 4K */
+@media (max-width: 2560px) {
+    .bottom {
+        width: 20%;
+        padding: 20px;
+    }
+    
+    .input-1 {
+        width: calc(100% - 60%);
+        margin-left: 30px;
+    }
+
+    .input-2 {
+        width: calc(100% - 60%);
+        margin-left: 30px;
+    }
+
+    .input-3 {
+        width: calc(100% - 60%);
+        margin-left: 15px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+}
+
+/* For laptops L */
+@media (max-width: 1440px) {
+    .bottom {
+        width: 25%;
+        padding: 20px;
+    }
+    
+    .input-1 {
+        width: calc(100% - 60%);
+        margin-left: 10px;
+    }
+
+    .input-2 {
+        width: calc(100% - 60%);
+        margin-left: 10px;
+    }
+
+    .input-3 {
+        width: calc(100% - 60%);
+        margin-left: 5px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+}
+
+/* For laptops */
+@media (max-width: 1024px) {
+    .bottom {
+        width: 30%;
+        padding: 20px;
+    }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .bottom {
+      width: 40%;
+      padding: 20px;
+  }
+
+  .input-1,
+  .input-2,
+  .input-3 {
+      width: calc(100% - 60%);
+      margin: 10px 15px;
+  }
+
+  button {
+      padding: 10px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .bottom {
+      width: 80%;
+      padding: 15px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  label {
+      font-size: 14px;
+  }
+
+  .input-1,
+  .input-2,
+  .input-3 {
+      width: calc(100% - 60%);
+      margin: 10px 10px;
+  }
+
+  button {
+      padding: 8px;
+      font-size: 14px;
+  }
+}

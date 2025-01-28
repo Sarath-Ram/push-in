@@ -1,0 +1,114 @@
+button{
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    position: relative;
+    padding: 13px 20px;
+    margin-top: 35px;
+    padding-top: 2.5%;
+    border-bottom: 2px solid transparent;
+
+}
+
+btn-cls{
+    align-items: center;
+    display: flex;
+}
+
+button:hover{
+    border-bottom-color: #07ad8e;
+}
+
+.home{
+    margin-left: 200px;
+    border-bottom-color: #07ad8e;
+}
+
+.partners-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .partners {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: medium;
+    padding: 13px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom-color 0.3s ease;
+  }
+  
+  .partners:hover {
+    border-bottom-color: #07ad8e; 
+  }
+  
+  .sub-arrow {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  
+  .dropdown1 {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    background-color: #ffffff;
+    color: #07ad8e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 10;
+    width: 200px;
+  }
+  
+  .dropdown1 li {
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .dropdown1 li:hover {
+    background-color: #f5f5f5;
+  }
+  
+
+.first{
+    margin-left: 600px;
+    margin-top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2em;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.second{
+    margin-left: 600px;
+    color: #07ad8e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    margin-left: 600px;
+}
+
+p{
+    font-size: medium;
+    font-family: sans-serif;
+    margin: 0px 0px 15px;
+    margin-left: 600px;
+}

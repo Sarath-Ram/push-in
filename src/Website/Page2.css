@@ -1,0 +1,18 @@
+.custom-card{
+    float: right;
+    margin-right: 350px;
+    margin-top: -180px;
+    width: 35rem;
+    padding: 30px;
+    border-radius: 30px !important;
+    overflow: hidden;
+    box-shadow: 0px 15px 15px -10px rgba(0, 0, 0, 0.15);
+}
+
+.text-custom{
+    color: #07ad8e;
+}
+.custom-bg {
+    background-color: #07ad8e !important;
+    color: white !important; 
+}

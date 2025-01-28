@@ -1,0 +1,82 @@
+.top {
+    color: #fff;
+    margin: 150px auto 0;
+    background-image: url(../image/gradient.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    max-width: 700px;
+    width: 80%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 10px 20px 12px 0px rgb(148, 142, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.submited-data {
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.submited-data:hover {
+    color: goldenrod;
+} 
+
+/* For 4K */
+@media (max-width: 2560px) {
+    .top {
+        width: 20%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+}
+
+/* For laptops L */
+@media (max-width: 1440px) {
+    .top {
+        width: 25%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+}
+
+/* For laptops */
+@media (max-width: 1024px) {
+    .top {
+        width: 30%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+}
+      
+/* For tablets */
+@media (max-width: 768px) {
+    .top {
+        width: 40%;
+        padding: 20px;
+        margin-top: 50px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .top {
+        width: 80%;
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}

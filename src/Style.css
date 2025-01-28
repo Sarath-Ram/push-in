@@ -1,0 +1,93 @@
+
+.Fullpage {
+  background-image: url(../src/nyt1.jpeg);
+  background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  color: black;
+  background-color: aqua;
+  float: inline-start;
+  margin-left: 5%;
+}
+
+.next {
+  color: black;
+  background-color: aqua;
+  float: inline-end;
+  margin-right: 5%;
+}
+
+.back:hover{
+  color: #fff;
+  background-color: rgb(9, 153, 243);
+}
+
+.next:hover{
+  color: #fff;
+  background-color: rgb(9, 153, 243);
+}
+
+@media (max-width: 2560px) {
+  .back {
+      margin-top: 100px;
+  }
+  
+  .next {
+      margin-top: 100px;
+  }
+}
+
+/* For laptops L */
+@media (max-width: 1440px) {
+  .back {
+      margin-top: 45px;
+  }
+  
+  .next {
+      margin-top: 45px;
+  }
+}
+
+/* For laptops */
+@media (max-width: 1024px) {
+  .back {
+      margin-top: 25px;
+  }
+  
+  .next {
+      margin-top: 25px;
+  }
+}
+    
+/* For tablets */
+@media (max-width: 768px) {
+  .back {
+      margin-top: 25px;
+  }
+
+  .next {
+      margin-top: 25px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .back {
+    margin-top: 40px;
+  }
+
+  .next {
+      margin-top: 40px;
+  }
+}
